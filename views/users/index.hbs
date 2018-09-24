@@ -1,13 +1,14 @@
 <h1>All Users</h1>
 <div>
     {{#each users}}
-        
-       <div>
-              
-           Name:<a href='/users/{{this._id}}'>
-                {{this.name}}
-                </a>
-                     
-           </div>
+
+    <div>
+
+        Name:
+        <a href='/users/{{this._id}}'>
+            {{this.name}}
+        </a>
+
+    </div>
     {{/each}}
 </div>
