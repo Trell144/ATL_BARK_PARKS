@@ -13,9 +13,13 @@ router.get('/', function (req, res) {
 });
 
 //NEW, RENDER NEW FORM
+router.get('/new', (req, res) => {
+res.render('users/new')
+
+})
+
+
 // router.method('path', function)
-
-
 //SHOW, SHOW ONE
 router.get('/:id', function (request, response) {
   User.findById(request.params.id)
@@ -30,7 +34,11 @@ router.get('/:id', function (request, response) {
 
 
 //CREATE
+router.post('/', (req, res) => {
+  const newUser = new User(req.body)
+  newUser.save()
 
+})
 
 
 //UPDATE
