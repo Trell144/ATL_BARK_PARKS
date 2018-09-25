@@ -30,7 +30,12 @@ router.get('/:id', function (request, response) {
 
 
 //EDIT, RENDER EDIT FORM
-
+router.get('/:id/edit', (req, res) => {
+  User.findById(req.params.id)
+    .then((user) => {
+      res.render('users/edit', { user })
+    })
+})
 
 
 //CREATE
