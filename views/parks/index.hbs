@@ -1,2 +1,11 @@
-<h1>My Parks</h1>
-<h1>All Gigs <a href='/users/{{userId}}/parks/{{parksId}}/gigs/new'>( new )</a></h1>
+
+<h1>All Parks<a href='/users/{{userId}}/parks/new'>( new )</a></h1>
+
+<div>
+  {{#each parks}}
+  <div>
+    Band Name: {{this.name}}
+    <a href='/users/{{../userId}}/bands/{{this._id}}'>Go to Parks</a>
+  </div>
+  {{/each}}
+</div>

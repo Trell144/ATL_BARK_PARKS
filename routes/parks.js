@@ -7,7 +7,7 @@ const { User, Park } = require('../db/schema')
 router.get('/', (req, res) => {
     User.findById(req.params.userId)
     .then((user)=> {
-        res.render('parks/user', {
+        res.render('parks/index', {
             userId: req.params.userId,
             parks: user.parks
 
