@@ -58,7 +58,7 @@ const amber = new User({
 
 User.deleteMany()
     .then(() => {
-        return User.insertMany([mike, kelly])
+        return User.insertMany([mike, kelly, gary, erik, amber])
     })
     .then(() => {
         console.log('seeds complete')

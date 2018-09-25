@@ -13,14 +13,14 @@ router.get('/', function (req, res) {
 });
 
 //NEW, RENDER NEW FORM
-
+// router.method('path', function)
 
 
 //SHOW, SHOW ONE
-router.get('/:id', function (req, res) {
-  User.findById(req.params.id)
-    .then((user) => {
-      res.render('users/show', { user: user })
+router.get('/:id', function (request, response) {
+  User.findById(request.params.id)
+    .then((userFromDb) => {
+      response.render('users/show', { user: userFromDb })
     })
 })
 
