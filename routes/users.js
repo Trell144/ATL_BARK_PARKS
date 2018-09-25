@@ -37,6 +37,9 @@ router.get('/:id', function (request, response) {
 router.post('/', (req, res) => {
   const newUser = new User(req.body)
   newUser.save()
+  .then(()=> {
+    res.redirect('/users')
+  })
 
 })
 
@@ -46,6 +49,12 @@ router.post('/', (req, res) => {
 
 
 //DELETE
+router.delete('/:id', (req, res) => {
+  User.findByIdAndRemove(req.params.id)
+    .then(() => {
+      res.redirect('/users')
+    })
+})
 
 
 
