@@ -3,10 +3,12 @@ body {
   font: 16pt "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: linear-gradient(green,rgb(255, 255, 255));
   background-repeat: no-repeat;
-  text-align: right,
+  text-align: center;
+  border: double;
 }
 
 a {
   color: #00B7FF;
 }
 
+h1
