@@ -10,5 +10,9 @@ This app was created to connect You(user) with many dog friendly parks around th
 
 # Technologies Used
 Languages - HTML5, CSS3, Javascript, Handlebars
-Project Planning & User Stories - Trello:
+Project Planning & User Stories - Trello: https://trello.com/b/H8JNpkSm/project-2
 VS Code
+
+# Future Developments
+Responsive app
+Full CRUD on all 3 models
