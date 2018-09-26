@@ -19,7 +19,7 @@ router.get('/new', (req, res) => {
 })
 
 
-// router.method('path', function)
+
 //SHOW, SHOW ONE
 router.get('/:id', function (request, response) {
   User.findById(request.params.id)
