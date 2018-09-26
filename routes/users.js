@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
 
 //NEW, RENDER NEW FORM
 router.get('/new', (req, res) => {
-res.render('users/new')
+  res.render('users/new')
 
 })
 
@@ -42,9 +42,9 @@ router.get('/:id/edit', (req, res) => {
 router.post('/', (req, res) => {
   const newUser = new User(req.body)
   newUser.save()
-  .then(()=> {
-    res.redirect('/users')
-  })
+    .then(() => {
+      res.redirect('/users')
+    })
 
 })
 
@@ -56,7 +56,6 @@ router.put('/:id', (req, res) => {
       res.redirect(`/users/${user._id}`)
     })
 })
-
 
 
 //DELETE
