@@ -1,10 +1,10 @@
-<h1>All Parks<a href='/users/{{userId}}/parks/new'>( new )</a></h1>
+<h1>All Parks<a href='/users/{{userId}}/parks/new'></a></h1>
 
 <div>
   {{#each parks}}
   <div>
-    Parks: {{this.park}}
-    <a href='/users/{{../userId}}/parks/{{this._id}}'>Lets See</a>
+    Parks: {{park}}
+    <a href='/users/{{../userId}}/parks/{{this._id}}'>Jones Bridge Park</a>
   </div>
   {{/each}}
 </div>
