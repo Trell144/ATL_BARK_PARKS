@@ -50,11 +50,17 @@ router.post('/', (req, res) => {
 
 
 //UPDATE
+router.put('/:id', (req, res) => {
+  User.findByIdAndUpdate(req.params.id, req.body)
+    .then((user) => {
+      res.redirect(`/users/${user._id}`)
+    })
+})
 
 
 
 //DELETE
-router.delete('/:id', (req, res) => {
+router.post('/:id', (req, res) => {
   User.findByIdAndRemove(req.params.id)
     .then(() => {
       res.redirect('/users')
