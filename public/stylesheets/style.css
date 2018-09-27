@@ -1,14 +1,16 @@
 body {
   padding: 50px;
-  font: 16pt "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* font: 16pt "Lucida Grande", Helvetica, Arial, sans-serif; */
+  font-family: 'Oswald', sans-serif;
+  font-size: 16pt;
   background-image: linear-gradient(green,rgb(255, 255, 255));
   background-repeat: no-repeat;
   text-align: center;
-  border: double;
+  border:  double;
+  
 }
 
 a {
-  color: #00B7FF;
+  color:rgb(184, 127, 21);
 }
 
-h1
